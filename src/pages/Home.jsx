@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -22,9 +23,9 @@ const Home = () => {
             <p className="lead mb-4">
               Streamline your daily tasks, set reminders, and track progress effortlessly with our intuitive Task Manager.
             </p>
-            <Button variant="warning" size="lg" href="/login" className="fw-bold px-4">
-              Get Started
-            </Button>
+            
+            <Link to={'/login'}  className="btn btn-warning btn-lg fw-bold px-4">Get Started</Link>
+
           </div>
 
           {/* Right Content */}
